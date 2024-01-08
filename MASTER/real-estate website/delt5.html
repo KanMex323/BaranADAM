@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="tr">
+    <title>Bingöl Emlak</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+
+        <a href="#" class="logo"><span>Bingöl</span>Emlak</a>
+
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="#services">Servislerimiz</a>
+            <a href="#featured">Portföylerimiz</a>
+            <a href="#agents">Çalışanlarımız</a>
+            <a href="#contact">İletişim</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <a href="#agents" class="fas fa-user"></a>
+        </div>
+
+    </header>
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>Portföy</span> Vitrini </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image-container">
+                    <img src="images/img-6.jpg" alt="">
+                    <div class="info">
+                        <h3>03.03.2023</h3>
+                        <h3>Satılık</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="fas fa-film"><h3>1</h3></a>
+                        <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>4.000.000 TL</h3>
+                        <a href="#contact" class="fas fa-envelope"></a>
+                        <a href="#contact" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>
+                            Otobüs dolmuş durakları dibindedir.Asansör bulunmaktadır Efesus outlet yakınındadır
+                            Katip Çelebi üniversitesi yakınındadır
+                            Egekent izban durağına 1 kmdir
+                        </h3>
+
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 78 m² </h3>
+                        <h3> <i class="fas fa-bed"></i> 1+1 </h3>
+                        <h3> <i class="fas fa-bath"></i> 1 </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="index.html" class="btn">Anasayfa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>İletişim</span> Bilgileri </h1>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <img src="images/icon-1.png" alt="">
+                <h3>Telefon Bilgileri</h3>
+                <p>+90 532 136 67 11</p>
+            </div>
+
+            <div class="icons">
+                <img src="images/icon-2.png" alt="">
+                <h3>Email Bilgileri</h3>
+                <p> baranbingol002@gmail.com </p>
+
+            </div>
+
+            <div class="icons">
+                <img src="images/icon-3.png" alt="">
+                <h3>Ofis Addresi</h3>
+                <p>Aydınevler, Siteler Yolu No:28, 34854 Maltepe/İstanbul</p>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <form action="">
+
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12053.259618922666!2d29.1218732!3d40.9526798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac68bd591c5bd%3A0xebe3a645da2c27c6!2sHilltown!5e0!3m2!1str!2str!4v1704680312476!5m2!1str!2str" allowfullscreen="" loading="lazy"></iframe>
+            </form>
+        </div>
+        <section class="footer">
+
+            <div class="footer-container">
+
+                <div class="box-container">
+
+
+                    <div class="box">
+                        <h3>Emlak Platformları</h3>
+                        <a href="#">Sahibinden</a>
+                        <a href="#">Emlakjet</a>
+
+                    </div>
+
+
+                    <div class="box">
+                        <h3>Sosyal Medya Hesaplarımız</h3>
+                        <a href="#">facebook</a>
+                        <a href="#">twitter</a>
+                        <a href="https://www.instagram.com/baran_bingol_/">instagram</a>
+
+
+                    </div>
+
+                </div>
+
+                <div class="credit"> <span> Bingöl Emlak </span> | Tüm Haklari Saklıdır! </div>
+
+            </div>
+
+        </section>
+
+
+        <script>
+
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+            menu.classList.toggle('fa-times');
+        }
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            menu.classList.remove('fa-times');
+        }
+
+        </script>
+    </section>
+</body>
+</html>
